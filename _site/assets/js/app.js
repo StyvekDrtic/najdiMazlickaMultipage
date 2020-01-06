@@ -1,3 +1,26 @@
+// slider
+
+$('.carouselSlider').slick({
+  infinite: true,
+  variableWidth: true,
+  centerPadding: '70px',
+  dots: true,
+  autoplay: false,
+  autoplaySpeed: 3000,
+  centerMode: true,
+  arrows: false,
+});
+
+$('.fadeLeva a').click(function() {
+$('.carouselSlider').slick("slickPrev");
+});
+
+$('.fadePrava a').click(function() {
+$('.carouselSlider').slick("slickNext");
+});
+
+
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything

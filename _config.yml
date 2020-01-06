@@ -6,12 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Název stránky
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-keywords: Lorem ipsum, dolor sit amet, consectetur adipiscing, elit, sed do
+title: Najdi Malíčka | Hledání ztracených zvířat pomocí cílených FB kampaní
+description: Ztratil se Vám domácí mazlíček? Náš tým Vám ho pomůže najít pomocí detailně cílených kampaní na sociálních sítích.
+keywords: NajdiMazlíčka, Najdi Malíčka, registrace ztráty, psí detektiv, ztraceni psi, ztratil se pes, ztráta kočky, hledání ztracených psů, hledáme kočku, pátrání po ztracených psech, ztracený pes, zatoulaná kočka, ztratila se kočka, hledáme psa, hledá se pes, ztráta psa, ztratila se mi kočka, hledání ztracených koček, zaběhnutý pes, zatoulaný pes, ztracené kočky, ztratil se mi pes, hledá se kočka, zaběhnutá kočka, ztracení psi
 author: palmmedia.co
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://palmmedia.co" # the base hostname & protocol for your site
+url: "https://najdimazlicka.cz" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+sass:
+    style: compressed
