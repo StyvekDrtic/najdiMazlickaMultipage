@@ -1,0 +1,565 @@
+.jumbotron {
+  background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
+  border-radius: 10px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+
+  h1 {
+    font-family: AvenirBlack;
+    font-size: 32px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    padding-top: 35px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+
+  p {
+    font-family: AvenirMedium;
+    font-size: 16px;
+    color: #727272;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    margin-top: 25px;
+    padding-bottom: 35px;
+  }
+
+  img {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: block;
+    margin-top: 55px;
+    padding-bottom: 40px;
+  }
+}
+
+.registrovatZtratu {
+  font-family: AvenirHeavy;
+  font-size: 17px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 11px 0px;
+  width: 200px;
+  border-radius: 10px;
+  background-image: linear-gradient(135deg, #FF8D55 0%, #E9214B 100%);
+  display: block;
+  margin: 0 auto;
+}
+
+.features {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: calc(100% - 50px);
+  margin-top: 25px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      width: 100px;
+      list-style: none;
+
+      img {
+        height: 60px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      span {
+        font-family: AvenirRoman;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 21px;
+      }
+    }
+  }
+}
+
+.vysvetlovac {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+
+  .text {
+    span {
+      font-family: AvenirBlack;
+      font-size: 13px;
+      color: #000000;
+      letter-spacing: 2.44px;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 0;
+      padding-left: 65px;
+      margin-bottom: 15px;
+      display: block;
+
+      &::before {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-image: linear-gradient(135deg, #FF8D55 0%, #E9214B 100%);
+        position: absolute;
+        left: 0;
+        top: 7.5px;
+      }
+    }
+
+    h2 {
+      font-family: AvenirBlack;
+      font-size: 33px;
+      color: #000000;
+      line-height: 49px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: AvenirMedium;
+      font-size: 16px;
+      color: #686868;
+      line-height: 33px;
+      margin-top: 0;
+      margin-bottom: 35px;
+    }
+  }
+
+  img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .mobileZjistitVice {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+}
+
+.zjistitVice {
+  font-family: AvenirBlack;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  background: linear-gradient(135deg, #FF8D55 0%, #E9214B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid black;
+  border-image: linear-gradient(135deg, #FF8D55 0%, #E9214B 100%);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-image-slice: 1;
+  padding-bottom: 2px;
+}
+
+.desktopZjistitVice {
+  display: none;
+}
+
+.procReklamy {
+  margin-top: 90px;
+}
+
+
+.citat {
+  background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
+  border-radius: 10px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  margin-top: 90px;
+
+  p {
+    font-family: AvenirMedium;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    line-height: 40px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    padding-top: 25px;
+
+    span {
+      font-family: AvenirBlack;
+    }
+  }
+
+  .carka {
+    height: 1px;
+    width: calc(100% - 110px);
+    margin: 30px auto;
+    background: #CECECE;
+  }
+
+  .clovek {
+    padding-bottom: 25px;
+    margin: 0 auto;
+    width: fit-content;
+
+    div {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .jmeno {
+      font-family: AvenirHeavy;
+      font-size: 20px;
+      color: #333333;
+      letter-spacing: 0;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .panicka {
+      font-family: AvenirMedium;
+      font-size: 16px;
+      color: #6A6A6A;
+      letter-spacing: 0;
+      display: block;
+    }
+
+    img {
+      width: 70px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 25px;
+    }
+  }
+}
+
+.jakHledame {
+  margin-top: 90px;
+}
+
+.reference {
+  position: relative;
+  margin-top: 90px;
+
+  h2 {
+    font-family: AvenirMedium;
+    font-size: 27px;
+    color: #000000;
+    text-align: center;
+    line-height: 48px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: calc(100% - 50px);
+  }
+
+  .fadeLeva {
+    display: none;
+  }
+
+  .fadePrava {
+    display: none;
+  }
+
+  .carouselSlider {
+    .carouselBlok {
+      .carouselBlokInner {
+        background-image: linear-gradient(153deg, #F9F9F9 49%, #F3F3F3 100%);
+        border-radius: 10px;
+        width: calc(100vw - 80px);
+        max-width: 300px;
+        position: relative;
+        margin-left: 7px;
+        margin-right: 7px;
+
+        p {
+          font-family: AvenirMedium;
+          font-size: 16px;
+          color: #000000;
+          text-align: center;
+          line-height: 31.88px;
+          width: calc(100% - 40px);
+          margin: 0 auto;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+
+        span {
+          font-family: AvenirBlack;
+          font-size: 16px;
+          color: #000000;
+          text-align: center;
+          line-height: 28.88px;
+          margin: 0 auto;
+          display: block;
+          padding-bottom: 15px;
+        }
+
+        .fotkaCarousel {
+          height: 200px;
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          background-position: center;
+          background-repeat: repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+.fotka1 {
+  background-image: url("../img/foto1.jpg");
+}
+
+.fotka2 {
+  background-image: url("../img/foto2.jpg");
+}
+
+.fotka3 {
+  background-image: url("../img/foto3.jpg");
+}
+
+.fotka4 {
+  background-image: url("../img/foto4.jpg");
+}
+
+.fotka5 {
+  background-image: url("../img/foto5.jpg");
+}
+
+.fotka6 {
+  background-image: url("../img/foto6.jpg");
+}
+
+.jakToVypada {
+  margin-top: calc(90px + 30px);
+}
+
+.onas {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  margin-top: 90px;
+
+  h2 {
+    font-family: AvenirMedium;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    line-height: 37px;
+    margin-bottom: 40px;
+
+    span {
+      font-family: AvenirBlack;
+    }
+  }
+
+  .team {
+    display: flex;
+    justify-content: space-between;
+    max-width: 315px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    .profil {
+      img {
+        width: 100px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: AvenirHeavy;
+        font-size: 16px;
+        color: #000000;
+        text-align: center;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5px;
+      }
+
+      span {
+        font-family: AvenirMedium;
+        font-size: 14px;
+        color: #949494;
+        text-align: center;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .zjistitVice {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: fit-content
+  }
+}
+
+.pripraveniRegistrovat {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  margin-top: 90px;
+
+  h2 {
+    font-family: AvenirMedium;
+    font-size: 27px;
+    color: #000000;
+    text-align: center;
+    line-height: 48px;
+    margin: 0 auto;
+  }
+
+  p {
+    font-family: AvenirMedium;
+    font-size: 16px;
+    color: #7A7A7A;
+    text-align: center;
+    line-height: 36px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .registrovatZtratu {
+    width: 230px;
+  }
+
+  .zjistitViceButton {
+    color: #000000;
+    background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
+    border: 1px solid #CECECE;
+    margin-top: 20px;
+  }
+}
+
+.clanek {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
+  border-radius: 10px;
+  margin-top: 90px;
+
+  span {
+    font-family: AvenirMedium;
+    font-size: 18px;
+    color: #838383;
+    letter-spacing: 0;
+    display: block;
+    padding-left: 30px;
+    padding-top: 25px;
+  }
+
+  a {
+    font-family: AvenirHeavy;
+    font-size: 23px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 38px;
+    display: block;
+    padding-left: 30px;
+    padding-bottom: 25px;
+  }
+}
+
+.mateDotaz {
+  text-align: center;
+  margin-top: 90px;
+
+  h2 {
+    font-family: AvenirRoman;
+    font-size: 27px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  a {
+    font-family: AvenirHeavy;
+    font-size: 32px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    padding-right: 35px;
+    margin: 0 auto;
+    position: relative;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      right: 0;
+      top: 13px;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      background: #5BFF68;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-family: AvenirMedium;
+    font-size: 16px;
+    color: #ABABAB;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+
+.rozcestnik {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  margin-top: 90px;
+
+  .odkaz {
+    background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
+    border-radius: 10px;
+    position: relative;
+    height: 65px;
+
+    .odkazText {
+      font-family: AvenirMedium;
+      font-size: 19px;
+      color: #000000;
+      line-height: 35px;
+      left: 20px;
+      top: 15px;
+      position: absolute;
+    }
+
+    .otevrit {
+      font-family: AvenirBlack;
+      font-size: 14px;
+      color: #000000;
+      letter-spacing: 1.68px;
+      text-align: center;
+      text-transform: uppercase;
+      background: #DCDCDC;
+      border-radius: 5px;
+      position: absolute;
+      top: 17px;
+      right: 17px;
+      padding: 6px 0;
+      width: 100px;
+    }
+
+    &:nth-child(2) {
+      margin: 10px 0;
+    }
+  }
+}

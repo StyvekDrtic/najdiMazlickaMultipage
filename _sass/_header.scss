@@ -1,3 +1,63 @@
-header {
+.mobilniMenuNabidka {
+  position: absolute;
+  display: none;
+  z-index: 1000;
+}
 
+header {
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  z-index: 100;
+
+  .announcement {
+    width: 100%;
+    background-image: linear-gradient(135deg, #FF8D55 0%, #F96E52 0%, #ED374D 100%, #E9214B 100%);
+
+    p {
+      color: white;
+      font-size: 13px;
+      width: calc(100% - 20px);
+      margin: 0 auto;
+      text-align: center;
+      font-family: AvenirHeavy;
+      padding-top: 3px;
+      padding-bottom: 6px;
+    }
+  }
+
+  .spodniHeader {
+    height: 70px;
+    background: white;
+    position: relative;
+
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      left: 25px;
+      top: 17px;
+
+      img {
+        width: 40px;
+      }
+    }
+
+    .desktopMenu {
+      display: none;
+    }
+
+    .mobilniMenu {
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      right: 25px;
+      top: 25px;
+
+      img {
+        width: 23px;
+      }
+    }
+  }
 }
