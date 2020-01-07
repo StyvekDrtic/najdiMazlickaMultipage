@@ -32,6 +32,10 @@ footer {
         text-align: center;
         margin-top: 10px;
         display: block;
+
+        @media screen and (max-width: 360px) {
+          font-size: 26px;
+        }
       }
     }
 
@@ -58,12 +62,16 @@ footer {
 
     span {
       font-family: AvenirHeavy;
-      font-size: 19px;
+      font-size: 17px;
       color: #FFFFFF;
       text-align: center;
       display: block;
       margin-bottom: 30px;
       padding-top: 35px;
+
+      @media screen and (max-width: 340px) {
+        font-size: 15px;
+      }
     }
 
     a {

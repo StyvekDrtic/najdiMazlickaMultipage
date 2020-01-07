@@ -1,7 +1,82 @@
 .mobilniMenuNabidka {
-  position: absolute;
+  position: fixed;
   display: none;
   z-index: 1000;
+  background: white;
+  box-shadow: 0 4px 9px 0 rgba(0,0,0,0.1);
+  top: 0;
+  width: 100%;
+
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 25px;
+    top: 17px;
+
+    img {
+      width: 40px;
+    }
+  }
+
+  .mobilniMenuZavrit {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 25px;
+    top: 22px;
+
+    img {
+      width: 26px;
+    }
+  }
+
+  nav {
+    margin-top: 90px;
+    text-align: center;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 40px;
+
+        a {
+          font-family: AvenirMedium;
+          font-size: 17px;
+          color: #151515;
+          text-align: center;
+        }
+      }
+    }
+
+    .telefon {
+      background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
+      padding: 15px 0;
+      margin-bottom: 0;
+      margin-top: 50px;
+
+      img {
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+
+      a {
+        font-family: AvenirMedium;
+        font-size: 15px;
+        color: #151515;
+        letter-spacing: 1.76px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+  }
 }
 
 header {
@@ -24,6 +99,10 @@ header {
       font-family: AvenirHeavy;
       padding-top: 3px;
       padding-bottom: 6px;
+
+      @media screen and (max-width: 340px) {
+        font-size: 12px;
+      }
     }
   }
 

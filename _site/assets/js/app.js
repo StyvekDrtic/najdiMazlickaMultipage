@@ -57,3 +57,41 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+  // faq
+
+
+  $(".otazka h3").click(function() {
+    if ($(this).parent().hasClass("zavreno")) {
+      $(this).parent().removeClass("zavreno");
+    }
+
+    else {
+      $(this).parent().addClass("zavreno");
+    }
+  });
+
+
+  // mobilnio Menu
+
+  $(".mobilniMenu").click(function() {
+    $(".mobilniMenuNabidka").removeClass("fadeInDown animated").removeClass("fadeOutUp animated").addClass("animated" + ' fadeInDown');
+    $(".mobilniMenuNabidka").toggle();
+  });
+
+  $(".mobilniMenuZavrit").click(function() {
+    $(".mobilniMenuNabidka").removeClass("fadeOutUp animated").removeClass("fadeInDown animated").addClass("animated" + ' fadeOutUp');
+
+    setTimeout(function() {
+      $(".mobilniMenuNabidka").toggle();
+    }, 1000);
+  });
+
+  $(".mobilniMenuNabidka ul li a").click(function() {
+    $(".mobilniMenuNabidka").removeClass("fadeOutUp animated").removeClass("fadeInDown animated").addClass("animated" + ' fadeOutUp');
+
+    setTimeout(function() {
+      $(".mobilniMenuNabidka").toggle();
+    }, 1000);
+  });

@@ -12,7 +12,12 @@
     text-align: center;
     padding-top: 35px;
     width: calc(100% - 40px);
+    max-width: 340px;
     margin: 0 auto;
+
+    @media screen and (max-width: 341px) {
+      font-size: 29px;
+    }
   }
 
   p {
@@ -26,6 +31,7 @@
     margin: 0 auto;
     margin-top: 25px;
     padding-bottom: 35px;
+    max-width: 400px;
   }
 
   img {
@@ -34,6 +40,7 @@
     display: block;
     margin-top: 55px;
     padding-bottom: 40px;
+    max-width: 330px;
   }
 }
 
@@ -56,6 +63,7 @@
   display: block;
   margin: 0 auto;
   width: calc(100% - 50px);
+  max-width: 400px;
   margin-top: 25px;
 
   ul {
@@ -87,10 +95,15 @@
       }
     }
   }
+
+  @media screen and (max-width: 370px) {
+    width: calc(100% - 20px);
+  }
 }
 
 .vysvetlovac {
   width: calc(100% - 50px);
+  max-width: 500px;
   margin: 0 auto;
 
   .text {
@@ -124,6 +137,16 @@
       line-height: 49px;
       margin-top: 0;
       margin-bottom: 20px;
+
+      @media screen and (max-width: 370px) {
+        font-size: 31px;
+        line-height: 46px;
+      }
+
+      @media screen and (max-width: 355px) {
+        font-size: 27px;
+        line-height: 41px;
+      }
     }
 
     p {
@@ -137,8 +160,10 @@
   }
 
   img {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 400px;
   }
 
   .mobileZjistitVice {
@@ -179,6 +204,7 @@
   background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
   border-radius: 10px;
   width: calc(100% - 20px);
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 90px;
 
@@ -194,6 +220,11 @@
 
     span {
       font-family: AvenirBlack;
+    }
+
+    @media screen and (max-width: 360px) {
+      font-size: 17px;
+      line-height: 36px;
     }
   }
 
@@ -236,6 +267,10 @@
       display: inline-block;
       vertical-align: middle;
       margin-right: 25px;
+
+      @media screen and (max-width: 340px) {
+        margin-right: 15px;
+      }
     }
   }
 }
@@ -257,6 +292,11 @@
     margin: 0 auto;
     margin-bottom: 20px;
     width: calc(100% - 50px);
+
+    @media screen and (max-width: 350px) {
+      font-size: 25px;
+      line-height: 44px;
+    }
   }
 
   .fadeLeva {
@@ -310,6 +350,10 @@
           background-repeat: repeat;
           background-size: cover;
         }
+
+        @media screen and (max-width: 340px) {
+          width: calc(100vw - 60px);
+        }
       }
     }
   }
@@ -347,6 +391,7 @@
   width: calc(100% - 50px);
   margin: 0 auto;
   margin-top: 90px;
+  max-width: 350px;
 
   h2 {
     font-family: AvenirMedium;
@@ -390,10 +435,15 @@
       font-size: 16px;
       color: #000000;
       text-align: center;
-      width: 150px;
+      width: 140px;
       display: block;
       margin: 0 auto;
       margin-bottom: 5px;
+
+      @media screen and (max-width: 340px) {
+        font-size: 15px;
+        width: 130px;
+      }
     }
 
     span {
@@ -401,9 +451,14 @@
       font-size: 14px;
       color: #949494;
       text-align: center;
-      width: 150px;
+      width: 140px;
       display: block;
       margin: 0 auto;
+
+      @media screen and (max-width: 340px) {
+        font-size: 13px;
+        width: 130px;
+      }
     }
   }
 }
@@ -412,6 +467,7 @@
   width: calc(100% - 50px);
   margin: 0 auto;
   margin-top: 90px;
+  max-width: 500px;
 
   h2 {
     font-family: AvenirMedium;
@@ -420,6 +476,11 @@
     text-align: center;
     line-height: 48px;
     margin: 0 auto;
+
+    @media screen and (max-width: 350px) {
+      font-size: 25px;
+      line-height: 44px;
+    }
   }
 
   p {
@@ -451,23 +512,25 @@
   background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
   border-radius: 10px;
   margin-top: 90px;
+  max-width: 500px;
 
   span {
     font-family: AvenirMedium;
-    font-size: 18px;
+    font-size: 16px;
     color: #838383;
     letter-spacing: 0;
     display: block;
     padding-left: 30px;
     padding-top: 25px;
+    margin-bottom: 4px;
   }
 
   a {
     font-family: AvenirHeavy;
-    font-size: 23px;
+    font-size: 20px;
     color: #000000;
     letter-spacing: 0;
-    line-height: 38px;
+    line-height: 34px;
     display: block;
     padding-left: 30px;
     padding-bottom: 25px;
@@ -486,6 +549,10 @@
     text-align: center;
     margin: 0;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 350px) {
+      font-size: 25px;
+    }
   }
 
   a {
@@ -508,6 +575,10 @@
       border-radius: 100%;
       background: #5BFF68;
     }
+
+    @media screen and (max-width: 350px) {
+      font-size: 28px;
+    }
   }
 
   p {
@@ -523,6 +594,7 @@
 
 .rozcestnik {
   width: calc(100% - 20px);
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 90px;
 
@@ -530,21 +602,21 @@
     background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
     border-radius: 10px;
     position: relative;
-    height: 65px;
+    height: 60px;
 
     .odkazText {
       font-family: AvenirMedium;
-      font-size: 19px;
+      font-size: 17px;
       color: #000000;
       line-height: 35px;
       left: 20px;
-      top: 15px;
+      top: 14px;
       position: absolute;
     }
 
     .otevrit {
       font-family: AvenirBlack;
-      font-size: 14px;
+      font-size: 12px;
       color: #000000;
       letter-spacing: 1.68px;
       text-align: center;
@@ -552,10 +624,14 @@
       background: #DCDCDC;
       border-radius: 5px;
       position: absolute;
-      top: 17px;
-      right: 17px;
+      top: 16px;
+      right: 16px;
       padding: 6px 0;
       width: 100px;
+
+      @media screen and (max-width: 360px) {
+        width: 80px;
+      }
     }
 
     &:nth-child(2) {
