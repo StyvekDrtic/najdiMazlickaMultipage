@@ -361,50 +361,50 @@
     }
   }
 
-  .team {
-    display: flex;
-    justify-content: space-between;
-    max-width: 315px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-
-    .profil {
-      img {
-        width: 100px;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: 20px;
-      }
-
-      p {
-        font-family: AvenirHeavy;
-        font-size: 16px;
-        color: #000000;
-        text-align: center;
-        width: 150px;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 5px;
-      }
-
-      span {
-        font-family: AvenirMedium;
-        font-size: 14px;
-        color: #949494;
-        text-align: center;
-        width: 150px;
-        display: block;
-        margin: 0 auto;
-      }
-    }
-  }
-
   .zjistitVice {
     margin: 0 auto;
     display: block;
     text-align: center;
     width: fit-content
+  }
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  max-width: 315px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  .profil {
+    img {
+      width: 100px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: AvenirHeavy;
+      font-size: 16px;
+      color: #000000;
+      text-align: center;
+      width: 150px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5px;
+    }
+
+    span {
+      font-family: AvenirMedium;
+      font-size: 14px;
+      color: #949494;
+      text-align: center;
+      width: 150px;
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 
