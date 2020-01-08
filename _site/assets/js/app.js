@@ -1,3 +1,8 @@
+//wow
+
+new WOW().init();
+
+
 // slider
 
 $('.carouselSlider').slick({
