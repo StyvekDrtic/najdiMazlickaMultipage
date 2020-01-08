@@ -1,5 +1,6 @@
 footer {
   width: calc(100% - 20px);
+  max-width: 1400px;
   margin: 0 auto;
   margin-top: calc(90px - 140px);
   margin-bottom: 10px;
@@ -9,7 +10,7 @@ footer {
     border: 1px solid #F7F7F7;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
     border-radius: 16px;
-    max-width: 340px;
+    max-width: 360px;
     width: calc(100% - 20px);
     margin: 0 auto;
     position: relative;
@@ -96,6 +97,14 @@ footer {
         max-height: 25px;
         margin: 10px;
       }
+
+      @media screen and (min-width: 900px) {
+        max-width: 800px;
+      }
     }
+  }
+
+  @media screen and (min-width: 900px) {
+    width: calc(100% - 40px);
   }
 }

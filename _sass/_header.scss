@@ -104,12 +104,19 @@ header {
         font-size: 12px;
       }
     }
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
   }
 
   .spodniHeader {
     height: 70px;
     background: white;
     position: relative;
+    width: 100%;
+    max-width: calc(1140px + 40px);
+    margin: 0 auto;
 
     .logo {
       display: inline-block;
@@ -120,11 +127,80 @@ header {
 
       img {
         width: 40px;
+
+        @media screen and (min-width: 900px) {
+          width: 45px;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        left: 20px;
+        top: 25px;
       }
     }
 
     .desktopMenu {
       display: none;
+      position: absolute;
+      right: 20px;
+      top: 25px;
+
+      nav {
+        ul {
+          padding: 0;
+          margin: 0;
+
+
+          li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            margin-left: 60px;
+            vertical-align: middle;
+
+            a {
+              font-family: AvenirMedium;
+              font-size: 15px;
+              color: #151515;
+              text-align: center;
+            }
+
+            &:first-child {
+              margin-left: 0;
+            }
+
+            @media screen and (min-width: 1100px) {
+              margin-left: 80px;
+            }
+          }
+
+          .telefon {
+            background-image: linear-gradient(135deg, #F9F9F9 0%, #F3F3F3 100%);
+            border-radius: 10px;
+            padding: 10px 20px;
+
+            a {
+              font-family: AvenirBlack;
+              font-size: 15px;
+              color: #000000;
+              letter-spacing: 1px;
+              text-align: center;
+              vertical-align: middle;
+            }
+
+            img {
+              height: 20px;
+              margin-right: 22px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        display: block;
+      }
     }
 
     .mobilniMenu {
@@ -137,6 +213,14 @@ header {
       img {
         width: 23px;
       }
+
+      @media screen and (min-width: 900px) {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      height: 90px;
     }
   }
 }

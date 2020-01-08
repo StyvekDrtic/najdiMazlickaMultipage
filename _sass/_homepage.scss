@@ -2,7 +2,39 @@
   background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
   border-radius: 10px;
   width: calc(100% - 20px);
+  max-width: 1400px;
   margin: 0 auto;
+
+  .jumbotronInner {
+    @media screen and (min-width: 900px) {
+      display: flex;
+      width: calc(100% - 80px);
+      max-width: 800px;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1100px) {
+      max-width: 940px;
+      width: calc(100% - 200px);
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    @media screen and (min-width: 1100px) {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+  }
+
+  .jumbotronText {
+    @media screen and (min-width: 900px) {
+      padding-top: 0;
+    }
+  }
 
   h1 {
     font-family: AvenirBlack;
@@ -18,6 +50,19 @@
     @media screen and (max-width: 341px) {
       font-size: 29px;
     }
+
+    @media screen and (min-width: 900px) {
+      text-align: left;
+      margin: 0;
+      font-size: 43px;
+      width: auto;
+      max-width: 420px;
+      padding-top: 0;
+    }
+
+    @media screen and (min-width: 1100px) {
+      font-size: 47px;
+    }
   }
 
   p {
@@ -32,6 +77,22 @@
     margin-top: 25px;
     padding-bottom: 35px;
     max-width: 400px;
+
+    @media screen and (min-width: 900px) {
+      text-align: left;
+      margin: 0;
+      padding-bottom: 0;
+      width: auto;
+      max-width: 420px;
+      font-size: 17px;
+      margin-top: 25px;
+      margin-bottom: 40px;
+      line-height: 32px;
+    }
+
+    @media screen and (min-width: 1100px) {
+      line-height: 34px;
+    }
   }
 
   img {
@@ -41,6 +102,29 @@
     margin-top: 55px;
     padding-bottom: 40px;
     max-width: 330px;
+
+    @media screen and (min-width: 900px) {
+      margin: 0;
+      padding-bottom: 0;
+      max-width: 332px;
+      height: 300px;
+      width: auto;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 1100px) {
+      height: auto;
+    }
+  }
+
+  .registrovatZtratu {
+    @media screen and (min-width: 900px) {
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    width: calc(100% - 40px);
   }
 }
 
@@ -72,6 +156,14 @@
     display: flex;
     justify-content: space-between;
 
+    .dektopFeature {
+      display: none;
+
+      @media screen and (min-width: 900px) {
+        display: block;
+      }
+    }
+
     li {
       width: 100px;
       list-style: none;
@@ -80,6 +172,10 @@
         height: 60px;
         display: block;
         margin: 0 auto;
+
+        @media screen and (min-width: 900px) {
+          height: 62px;
+        }
       }
 
       span {
@@ -92,12 +188,40 @@
         letter-spacing: 0;
         text-align: center;
         line-height: 21px;
+
+        @media screen and (min-width: 900px) {
+          font-family: AvenirMedium;
+          font-size: 17px;
+          line-height: 25.72px;
+        }
+      }
+
+      .mobilePopisek {
+        @media screen and (min-width: 900px) {
+          display: none;
+        }
+      }
+
+      .desktopPopisek {
+        display: none;
+
+        @media screen and (min-width: 900px) {
+          display: block;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        width: 250px;
       }
     }
   }
 
   @media screen and (max-width: 370px) {
     width: calc(100% - 20px);
+  }
+
+  @media screen and (min-width: 900px) {
+    max-width: 1000px;
   }
 }
 
@@ -128,6 +252,11 @@
         left: 0;
         top: 7.5px;
       }
+
+      @media screen and (min-width: 900px) {
+        font-size: 15px;
+        letter-spacing: 2.81px;
+      }
     }
 
     h2 {
@@ -147,6 +276,12 @@
         font-size: 27px;
         line-height: 41px;
       }
+
+      @media screen and (min-width: 900px) {
+        font-size: 40px;
+        line-height: 64px;
+        margin-bottom: 15px;
+      }
     }
 
     p {
@@ -156,6 +291,14 @@
       line-height: 33px;
       margin-top: 0;
       margin-bottom: 35px;
+
+      @media screen and (min-width: 900px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      max-width: 400px;
     }
   }
 
@@ -164,6 +307,15 @@
     display: block;
     width: 100%;
     max-width: 400px;
+
+    @media screen and (min-width: 900px) {
+      margin: 0;
+      max-width: 350px;
+    }
+
+    @media screen and (min-width: 980px) {
+      max-width: 400px;
+    }
   }
 
   .mobileZjistitVice {
@@ -171,6 +323,18 @@
     width: fit-content;
     margin: 0 auto;
     margin-top: 35px;
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    max-width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 80px);
   }
 }
 
@@ -193,10 +357,19 @@
 
 .desktopZjistitVice {
   display: none;
+
+  @media screen and (min-width: 900px) {
+    display: block;
+    width: fit-content;
+  }
 }
 
 .procReklamy {
   margin-top: 90px;
+
+  @media screen and (min-width: 900px) {
+    margin-top: 120px;
+  }
 }
 
 
@@ -226,6 +399,11 @@
       font-size: 17px;
       line-height: 36px;
     }
+
+    @media screen and (min-width: 900px) {
+      max-width: 660px;
+      padding-top: 35px;
+    }
   }
 
   .carka {
@@ -233,6 +411,7 @@
     width: calc(100% - 110px);
     margin: 30px auto;
     background: #CECECE;
+    max-width: 430px;
   }
 
   .clovek {
@@ -272,11 +451,36 @@
         margin-right: 15px;
       }
     }
+
+    @media screen and (min-width: 900px) {
+      padding-bottom: 35px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    margin-top: 120px;
+    max-width: 940px;
   }
 }
 
 .jakHledame {
   margin-top: 90px;
+
+  .text {
+    @media screen and (min-width: 900px) {
+      order: 2;
+    }
+  }
+
+  .img {
+    @media screen and (min-width: 900px) {
+      order: 1;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    margin-top: 120px;
+  }
 }
 
 .reference {
@@ -297,14 +501,78 @@
       font-size: 25px;
       line-height: 44px;
     }
+
+    @media screen and (min-width: 900px) {
+      font-family: AvenirRoman;
+      font-size: 27px;
+      margin-bottom: 35px;
+    }
   }
 
   .fadeLeva {
     display: none;
+    position: absolute;
+    height: calc(100% - 80px);
+    width: 200px;
+    top: 80px;
+    left: 0;
+    z-index: 10;
+
+    .pozadiFade {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%);
+      height: 100%;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    img {
+      height: 40px;
+      position: absolute;
+      top: calc(50% - 20px);
+      left: 30px;
+      z-index: 10;
+      opacity: 0.6;
+    }
+
+    @media screen and (min-width: 900px) {
+      display: block;
+    }
   }
 
   .fadePrava {
     display: none;
+    position: absolute;
+    height: calc(100% - 80px);
+    width: 200px;
+    top: 80px;
+    right: 0;
+    z-index: 10;
+
+    .pozadiFade {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%);
+      height: 100%;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    img {
+      height: 40px;
+      position: absolute;
+      top: calc(50% - 20px);
+      right: 30px;
+      z-index: 10;
+      opacity: 0.6;
+    }
+
+    @media screen and (min-width: 900px) {
+      display: block;
+    }
   }
 
   .carouselSlider {
@@ -328,6 +596,13 @@
           margin: 0 auto;
           margin-top: 15px;
           margin-bottom: 15px;
+
+          @media screen and (min-width: 900px) {
+            color: #686868;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+          }
         }
 
         span {
@@ -349,13 +624,34 @@
           background-position: center;
           background-repeat: repeat;
           background-size: cover;
+
+          @media screen and (min-width: 900px) {
+            border-radius: 13px;
+            box-shadow: 0 4px 9px 0 rgba(0,0,0,0.10);
+            border-radius: 13.12px;
+          }
         }
 
         @media screen and (max-width: 340px) {
           width: calc(100vw - 60px);
         }
+
+        @media screen and (min-width: 900px) {
+          margin: 0 25px;
+          background: none;
+          max-width: 320px;
+          margin-bottom: 10px;
+        }
+
+        @media screen and (min-width: 1000px) {
+          margin: 0 35px;
+        }
       }
     }
+  }
+
+  @media screen and (min-width: 900px) {
+    margin-top: 120px;
   }
 }
 
@@ -385,6 +681,10 @@
 
 .jakToVypada {
   margin-top: calc(90px + 30px);
+
+  @media screen and (min-width: 900px) {
+    margin-top: calc(120px + 30px);
+  }
 }
 
 .onas {
@@ -404,6 +704,12 @@
     span {
       font-family: AvenirBlack;
     }
+
+    @media screen and (min-width: 900px) {
+      font-size: 27px;
+      line-height: 50px;
+      margin-bottom: 50px;
+    }
   }
 
   .zjistitVice {
@@ -411,6 +717,11 @@
     display: block;
     text-align: center;
     width: fit-content
+  }
+
+  @media screen and (min-width: 900px) {
+    margin-top: 120px;
+    max-width: 500px;
   }
 }
 
@@ -428,6 +739,10 @@
       text-align: center;
       margin: 0 auto;
       margin-bottom: 20px;
+
+      @media screen and (min-width: 900px) {
+        width: 170px;
+      }
     }
 
     p {
@@ -444,6 +759,11 @@
         font-size: 15px;
         width: 130px;
       }
+
+      @media screen and (min-width: 900px) {
+        font-size: 18px;
+        width: 170px;
+      }
     }
 
     span {
@@ -459,7 +779,17 @@
         font-size: 13px;
         width: 130px;
       }
+
+      @media screen and (min-width: 900px) {
+        font-size: 16px;
+        width: 170px;
+      }
     }
+  }
+
+  @media screen and (min-width: 900px) {
+    max-width: 440px;
+    margin-bottom: 40px;
   }
 }
 
@@ -481,6 +811,11 @@
       font-size: 25px;
       line-height: 44px;
     }
+
+    @media screen and (min-width: 900px) {
+      font-size: 39px;
+      line-height: 48px;
+    }
   }
 
   p {
@@ -488,10 +823,16 @@
     font-size: 16px;
     color: #7A7A7A;
     text-align: center;
-    line-height: 36px;
+    line-height: 35px;
     margin: 0 auto;
     margin-bottom: 40px;
     margin-top: 20px;
+
+    @media screen and (min-width: 900px) {
+      max-width: 500px;
+      font-size: 17px;
+      line-height: 36px;
+    }
   }
 
   .registrovatZtratu {
@@ -503,6 +844,11 @@
     background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
     border: 1px solid #CECECE;
     margin-top: 20px;
+  }
+
+  @media screen and (min-width: 900px) {
+    margin-top: 120px;
+    max-width: 940px;
   }
 }
 
@@ -535,6 +881,10 @@
     padding-left: 30px;
     padding-bottom: 25px;
   }
+
+  @media screen and (min-width: 900px) {
+    margin-top: 120px;
+  }
 }
 
 .mateDotaz {
@@ -552,6 +902,11 @@
 
     @media screen and (max-width: 350px) {
       font-size: 25px;
+    }
+
+    @media screen and (min-width: 900px) {
+      font-size: 27px;
+      margin-bottom: 25px;
     }
   }
 
@@ -574,10 +929,18 @@
       height: 15px;
       border-radius: 100%;
       background: #5BFF68;
+
+      @media screen and (min-width: 900px) {
+        top: 26px;
+      }
     }
 
     @media screen and (max-width: 350px) {
       font-size: 28px;
+    }
+
+    @media screen and (min-width: 900px) {
+      font-size: 49px;
     }
   }
 
@@ -588,6 +951,10 @@
     color: #ABABAB;
     text-align: center;
     margin-top: 10px;
+  }
+
+  @media screen and (min-width: 900px) {
+    margin-top: 120px;
   }
 }
 
@@ -637,5 +1004,9 @@
     &:nth-child(2) {
       margin: 10px 0;
     }
+  }
+
+  @media screen and (min-width: 900px) {
+    margin-top: 120px;
   }
 }
