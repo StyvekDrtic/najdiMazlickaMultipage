@@ -48,7 +48,7 @@
   }
 
   .paragrafy {
-    width: calc(100% - 50px);
+    width: calc(100% - 40px);
     margin: 0 auto;
     margin-top: 60px;
     max-width: 400px;
@@ -93,10 +93,10 @@
 
     p {
       font-family: AvenirMedium;
-      font-size: 17px;
+      font-size: 16px;
       color: #6C6C6C;
       text-align: center;
-      line-height: 36px;
+      line-height: 34px;
       margin-top: 0;
       margin-bottom: 40px;
 
@@ -136,6 +136,7 @@
       justify-content: space-between;
       max-width: 1140px;
       margin-top: 90px;
+      width: calc(100% - 50px);
     }
   }
 }
