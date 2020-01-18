@@ -11,10 +11,13 @@
         <a href="/jaktofunguje">Jak to funguje?</a>
       </li>
       <li>
-        <a href="/onas">O nás</a>
+        <a href="/procreklamy">Proč reklamy?</a>
       </li>
       <li>
-        <a title="Šťastné konce" href="/#reference">Šťastné konce</a>
+        <a href="/pribehyostatnich">Příběhy ostatních</a>
+      </li>
+      <li>
+        <a href="/onas">O nás</a>
       </li>
       <li>
         <a href="/registrovatztratu">Registrovat ztrátu</a>
@@ -38,10 +41,12 @@
   </nav>
 </div>
 
-<header>
-  <div class="announcement">
-    <p>📢 Překonali jsme hranici 500tis. oslovených lidí! 📢</p>
-  </div>
+<header {% if page.url == '/' %}class="homepageHeader"{% endif %}>
+  {% if page.url == '/' %}
+  <!--<div class="announcement">
+    <p>📢 Překonali jsme hranici 600tis. oslovených lidí! 📢</p>
+  </div>-->
+  {% endif %}
   <div class="spodniHeader">
     <a class="logo" href="/">
       <img src="/assets/img/logo-min.png" alt="Logo Najdi Mazlíčka">
@@ -56,6 +61,12 @@
         <ul>
           <li>
             <a href="/jaktofunguje">Jak to funguje?</a>
+          </li>
+          <li>
+            <a href="/procreklamy">Proč reklamy?</a>
+          </li>
+          <li>
+            <a href="/pribehyostatnich">Příběhy ostatních</a>
           </li>
           <li>
             <a href="/onas">O nás</a>

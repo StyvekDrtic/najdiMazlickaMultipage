@@ -24,6 +24,66 @@
     }
   }
 
+  .oNasStatistiky {
+    ul {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 70px;
+
+      li {
+        padding: 0;
+        margin: 0 auto;
+        list-style: none;
+        margin-top: 40px;
+
+        p {
+          font-family: AvenirMedium;
+          font-size: 16px;
+          color: #000000;
+          text-align: center;
+          margin: 0 auto;
+
+          span {
+            font-family: AvenirBlack;
+            font-size: 33px;
+            color: #000000;
+            text-align: center;
+            line-height: 40px;
+            display: block;
+
+            background: linear-gradient(155deg, #FF8D55 0%, #E9214B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          @media screen and (min-width: 900px) {
+            width: 100%;
+          }
+        }
+
+        @media screen and (min-width: 900px) {
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-bottom: 120px;
+        max-width: 1200px;
+      }
+    }
+  }
+
+  .team {
+    width: calc(100% - 40px);
+    margin-bottom: 90px;
+  }
+
   p {
     font-family: AvenirMedium;
     font-size: 16px;

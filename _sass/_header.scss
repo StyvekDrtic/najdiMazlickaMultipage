@@ -44,7 +44,7 @@
         padding: 0;
         margin: 0;
         list-style: none;
-        margin-bottom: 45px;
+        margin-bottom: 35px;
 
         a {
           font-family: AvenirMedium;
@@ -110,7 +110,7 @@ header {
       }
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 1100px) {
       display: none;
     }
   }
@@ -121,6 +121,7 @@ header {
     position: relative;
     width: 100%;
     max-width: calc(1140px + 40px);
+    max-width: calc(1400px + 40px);
     margin: 0 auto;
 
     .logo {
@@ -133,12 +134,12 @@ header {
       img {
         width: 40px;
 
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: 1100px) {
           width: 45px;
         }
       }
 
-      @media screen and (min-width: 900px) {
+      @media screen and (min-width: 1100px) {
         left: 20px;
         top: 25px;
       }
@@ -161,7 +162,7 @@ header {
             padding: 0;
             margin: 0;
             display: inline-block;
-            margin-left: 60px;
+            margin-left: 50px;
             vertical-align: middle;
 
             a {
@@ -175,8 +176,16 @@ header {
               margin-left: 0;
             }
 
-            @media screen and (min-width: 1100px) {
-              margin-left: 80px;
+            @media screen and (min-width: 1200px) {
+              margin-left: 60px;
+            }
+
+            @media screen and (min-width: 1250px) {
+              margin-left: 70px;
+            }
+
+            @media screen and (min-width: 1400px) {
+              margin-left: 75px;
             }
           }
 
@@ -203,7 +212,7 @@ header {
         }
       }
 
-      @media screen and (min-width: 900px) {
+      @media screen and (min-width: 1100px) {
         display: block;
       }
     }
@@ -219,13 +228,21 @@ header {
         width: 23px;
       }
 
-      @media screen and (min-width: 900px) {
+      @media screen and (min-width: 1100px) {
         display: none;
       }
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 1100px) {
       height: 90px;
     }
+  }
+}
+
+.homepageHeader {
+  position: absolute;
+
+  @media screen and (min-width: 900px) {
+    position: fixed;
   }
 }

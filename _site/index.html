@@ -78,7 +78,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 </head>
 
 
-  <body>
+  <body >
 
     <div class="mobilniMenuNabidka">
   <a class="logo" href="/">
@@ -93,10 +93,13 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         <a href="/jaktofunguje">Jak to funguje?</a>
       </li>
       <li>
-        <a href="/onas">O nás</a>
+        <a href="/procreklamy">Proč reklamy?</a>
       </li>
       <li>
-        <a title="Šťastné konce" href="/#reference">Šťastné konce</a>
+        <a href="/pribehyostatnich">Příběhy ostatních</a>
+      </li>
+      <li>
+        <a href="/onas">O nás</a>
       </li>
       <li>
         <a href="/registrovatztratu">Registrovat ztrátu</a>
@@ -120,10 +123,12 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   </nav>
 </div>
 
-<header>
-  <div class="announcement">
-    <p>📢 Překonali jsme hranici 500tis. oslovených lidí! 📢</p>
-  </div>
+<header class="homepageHeader">
+  
+  <!--<div class="announcement">
+    <p>📢 Překonali jsme hranici 600tis. oslovených lidí! 📢</p>
+  </div>-->
+  
   <div class="spodniHeader">
     <a class="logo" href="/">
       <img src="/assets/img/logo-min.png" alt="Logo Najdi Mazlíčka">
@@ -138,6 +143,12 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         <ul>
           <li>
             <a href="/jaktofunguje">Jak to funguje?</a>
+          </li>
+          <li>
+            <a href="/procreklamy">Proč reklamy?</a>
+          </li>
+          <li>
+            <a href="/pribehyostatnich">Příběhy ostatních</a>
           </li>
           <li>
             <a href="/onas">O nás</a>
@@ -156,49 +167,76 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 </header>
 
 
-    <section class="jumbotron">
+    <section class="jumbotronMobile">
+  <div class="content">
+    <h1 class="wow fadeInDown">Pátrací letáky nefungují. My ano.</h1>
+    <p class="wow fadeIn">Hledáme ztracená zvířata pomocí reklam na sociálních sítích. Do pár hodin tak o ztrátě informujeme tisíce lidí v oblasti, kde se ztracené zvíře pohybuje.</p>
+    <a class="registrovatZtratu" href="/pomocnik">Pojďme začít!</a>
+    <a class="registrovatZtratu zjistitViceJumbo" href="#postup">Zjisit více</a>
+  </div>
+  <div class="pozadi">
+  </div>
+</section>
+
+<section class="jumbotronDesktop">
   <div class="jumbotronInner">
     <div class="jumbotronText">
       <h1 class="wow fadeInDown">Pátrací letáky nefungují. My ano.</h1>
       <p class="wow fadeIn">Jsme agentura, která hledá ztracená zvířata pomocí reklam na sociálních sítích. Do pár hodin tak o ztrátě informujeme tisíce lidí v oblasti, kde se ztracené zvíře pohybuje.</p>
       <a class="registrovatZtratu" href="/pomocnik">Pojďme začít!</a>
-      <a class="registrovatZtratu zjistitViceJumbo" href="#features">Zjisit více</a>
+      <a class="registrovatZtratu zjistitViceJumbo" href="#postup">Zjisit více</a>
     </div>
-    <img class="wow zoomIn" src="assets/img/ilustrace-min.png" alt="Ilustrace Najdi Mazlíčka">
+    <img class="wow zoomIn" src="assets/img/ilustrace2-min.png" alt="Ilustrace Najdi Mazlíčka">
   </div>
 </section>
 
-<section class="features" id="features">
+<section class="postup" id="postup">
+  <h2>Jak to funguje?</h2>
   <ul>
     <li>
-      <img src="assets/img/cesko-min.png" alt="Celá ČR, 7 dní v týdnu">
+      <img src="assets/img/registrace-min.png" alt="Registrace">
+      <h3>1. Registrace</h3>
+      <p>Registrace zabere jen pár minut. Náš tým Vám ihned po jejím odeslání naplánuje celou kampaň na míru.</p>
+    </li>
+    <li>
+      <img src="assets/img/spustenikampane-min.png" alt="Spuštění kampaně">
+      <h3>2. Spuštění kampaně</h3>
+      <p>Během pár hodin začněme o ztrátě informovat až desítky tisíc lidí v oblasti, kde se zvíře pohybuje.</p>
+    </li>
+    <li>
+      <img src="assets/img/ziskavanistop-min.png" alt="Získávání stop">
+      <h3>3. Získávání stop</h3>
+      <p>Neustále přizpůsobujeme kampaň dle informací od lidí, kteří zvíře viděli. Mazlíčka tak lehce vystopujeme.</p>
+    </li>
+    <li>
+      <img src="assets/img/nalezmazlicka-min.png" alt="Nález mazlíčka">
+      <h3>4. Nález mazlíčka</h3>
+      <p>Průměrně se nám daří 74% domácích mazlíčků v pořádku vrátit domů. Můžeme pomoci i Vám?</p>
+    </li>
+  </ul>
+  <a class="registrovatZtratu" href="/jaktofunguje">Zjistit více</a>
+</section>
+
+<section class="features">
+  <ul>
+    <li>
+      <img class="featureFotoCesko"src="assets/img/cesko2-min.png" alt="Celá ČR, 7 dní v týdnu">
       <span class="mobilePopisek">Celá ČR<br>7 dní v týdnu</span>
       <span class="desktopPopisek">Celá ČR, 7 dní v týdnu</span>
     </li>
     <li>
-      <img src="assets/img/stopky-min.png" alt="Vše spustíme do pár hodin">
+      <img class="featureFotoStopky"src="assets/img/stopky2-min.png" alt="Vše spustíme do pár hodin">
       <span>Vše spustíme do pár hodin</span>
     </li>
     <li>
-      <img src="assets/img/74-min.png" alt="Úspěšnost v hledání">
+      <img class="featureFoto74"src="assets/img/742-min.png" alt="Úspěšnost v hledání">
       <span>úspěšnost v hledání</span>
     </li>
     <li class="dektopFeature">
-      <img src="assets/img/500000-min.png" alt="500 000+ již oslovených lidí">
+      <img src="assets/img/600000-min.png" alt="600 000+ již oslovených lidí">
       <span>již oslovených lidí</span>
     </li>
   </ul>
-</section>
-
-<section class="vysvetlovac procReklamy">
-  <div class="text">
-    <span>Proč reklamy?</span>
-    <h2>Neděláme SMS, Emaily ani databáze. Hledáme efektivně</h2>
-    <p>Oslovit tolik správných lidí jako oslovujeme my by prostřednictvím SMS bylo cca 30x dražší, E-maily lidé vymažou a do databáze nikdo “jen tak” nekouká. Zaměřujeme se proto jen na ten nejefektivnější způsob.</p>
-    <a class="desktopZjistitVice zjistitVice" href="/jaktofunguje">Zjistit více</a>
-  </div>
-  <img src="assets/img/graf-min.png" alt="Porovnání služeb">
-  <a class="mobileZjistitVice zjistitVice" href="/jaktofunguje">Zjistit více</a>
 </section>
 
 <section class="citat">
@@ -213,19 +251,30 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   </div>
 </section>
 
+<a class="registrovatZtratu pribehyNasichZakazniku" href="/pribehyostatnich">Příběhy našich zákazníků</a>
+
+<section class="vysvetlovac jakToVypada">
+  <div class="text">
+    <span>Jak to vypadá?</span>
+    <h2>74% mazlíčků se nám podaří najít</h2>
+    <p>Naše reklamy si můžete představit úplně stejně, jako běžné příspěvky na sociálních sítích. Lidé je mohou sdílet, komentovat, atd. Fungují ale úplně jinak, než ty klasické v různých skupinách nebo ty na Vašem profilu.</p>
+    <a class="desktopZjistitVice registrovatZtratu" href="/procreklamy">Hlavní výhody reklam</a>
+  </div>
+  <img src="assets/img/iphone-min.png" alt="Porovnání služeb">
+  <a class="registrovatZtratu" href="/procreklamy">Hlavní výhody reklam</a>
+</section>
+
 <section class="vysvetlovac jakHledame">
   <div class="text">
     <span>jak hledáme?</span>
-    <h2>Oslovíme každého v okruhu ztráty</h2>
+    <h2>Oslovíme tisíce lidí v okruhu ztráty</h2>
     <p>Díky našim marketingovým nástrojům jsme schopni informovat všechny v libovolném okruhu okolo místa ztráty. Všem těmto lidem se potom na Facebooku a Instagramu zobrazí příspěvek s fotkami Vašeho mazlíčka.</p>
-    <a class="desktopZjistitVice zjistitVice" href="/jaktofunguje">Zjistit více</a>
   </div>
   <img src="assets/img/mapa-min.png" alt="Porovnání služeb">
-  <a class="mobileZjistitVice zjistitVice" href="/jaktofunguje">Zjistit více</a>
 </section>
 
-<section id="reference" class="reference">
-  <h2>Reálné případy našich zákazníků</h2>
+<section class="reference">
+  <h2>Reálné příbehy hledání</h2>
   <div class="fadeLeva">
     <a>
       <img src="assets/img/levo-min.png?a=2" alt="Levá šipka">
@@ -286,17 +335,6 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   </div>
 </section>
 
-<section class="vysvetlovac jakToVypada">
-  <div class="text">
-    <span>Jak to vypadá?</span>
-    <h2>74% mazlíčků se nám podaří najít</h2>
-    <p>Naše reklamy si můžete představit úplně stejně jako běžné příspěvky na sociálních sítích. Lidé je mohou sdílet, komentovat, atd. Fungují ale úplně jinak, než ty klasické v různých skupinách nebo ty na Vašem profilu.</p>
-    <a class="desktopZjistitVice zjistitVice" href="/jaktofunguje">Zjistit více</a>
-  </div>
-  <img src="assets/img/iphone-min.png" alt="Porovnání služeb">
-  <a class="mobileZjistitVice zjistitVice" href="/jaktofunguje">Zjistit více</a>
-</section>
-
 <section class="onas">
   <h2>Víme, že <span>záleží na každé minutě</span> a <span>uděláme maximum</span> pro to Vám pomoci</h2>
   <div class="team">
@@ -314,15 +352,21 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   <a class="zjistitVice" href="/onas">O nás</a>
 </section>
 
-
+<section class="vysvetlovac procReklamy">
+  <div class="text">
+    <span>Proč reklamy?</span>
+    <h2>Neděláme SMS, Emaily ani databáze. Hledáme efektivně</h2>
+    <p>Oslovit tolik správných lidí jako oslovujeme my by prostřednictvím SMS bylo cca 30x dražší, E-maily lidé vymažou a do databáze nikdo “jen tak” nekouká. Zaměřujeme se proto jen na ten nejefektivnější způsob.</p>
+  </div>
+  <img src="assets/img/graf-min.png" alt="Porovnání služeb">
+</section>
 
 <section class="pripraveniRegistrovat">
   <h2>Jste připraveni ztrátu zaregistrovat?</h2>
   <p>Po registraci začínáme na Vašem případě ihned pracovat. Denně s Vámi komunikujeme a uděláme vše proto, abychom Vám pomohli.</p>
   <a class="registrovatZtratu" href="/registrovatztratu">Registrovat ztrátu</a>
-  <a class="registrovatZtratu zjistitViceButton" href="/jaktofunguje">Zjistit více</a>
+  <a class="registrovatZtratu zjistitViceButton" href="/jaktofunguje">Jak to funguje?</a>
 </section>
-
 
 <section class="clanek clanekPrvni">
   <span>Článek</span>
@@ -339,21 +383,6 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   <h2>Máte nějaký dotaz?</h2>
   <a href="tel:00420732400851">+420 732 400 851</a>
   <p>K dispozici 7 dní v týdnu 8h - 22h</p>
-</section>
-
-<section class="rozcestnik">
-  <div class="odkaz">
-    <a class="odkazText" href="/jaktofunguje">Jak to vůbec funguje?</a>
-    <a class="otevrit" href="/jaktofunguje">Otevřít</a>
-  </div>
-  <div class="odkaz">
-    <a class="odkazText" href="/onas">O nás</a>
-    <a class="otevrit" href="/onas">Otevřít</a>
-  </div>
-  <div class="odkaz">
-    <a class="odkazText" href="/registrace">Registrace</a>
-    <a class="otevrit" href="/registrace">Otevřít</a>
-  </div>
 </section>
 
 
@@ -379,7 +408,10 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     <a title="Registrovat ztrátu" href="/registrovatztratu">Registrovat ztrátu</a>
     <a title="O nás" href="/onas">O nás</a>
     <a title="Jak to funguje?" href="/jaktofunguje">Jak to funguje?</a>
+    <a title="Proč reklamy?" href="/procreklamy">Proč reklamy?</a>
+    <a title="Příběhy ostatních" href="/pribehyostatnich">Příběhy ostatních</a>
     <br>
+    <a title="Garance výkonu" href="/garance">Garance výkonu</a>
     <a title="Všeobecné obchodní podmínky" href="/vseobecne_obchodni_podminky">Všeobecné obchodní podmínky</a>
     <a title="Podmínky ochrany osobních údajů" href="/zpracovani_osobnich_udaju">Podmínky ochrany osobních údajů</a>
     <a title="E-mail na nás" href="mailto:jiri@palmmedia.cz">Kontakt: jiri@palmmedia.cz</a>
@@ -401,7 +433,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="/assets/slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script src="/assets/js/wow.min.js"></script>
-  <script src="/assets/js/app.js?a=2"></script>
+  <script src="/assets/js/app.js?a=3"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.0.0-alpha/quicklink.umd.js"></script>
   <script>
   window.addEventListener('load', () => {

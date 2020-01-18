@@ -207,7 +207,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top - 100
+          scrollTop: target.offset().top
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
@@ -238,6 +238,21 @@ $('a[href*="#"]')
     }
   });
 
+
+
+  // paragraf
+
+  $(".zobrazitVse span").click(function() {
+    if ($(this).parent().parent().hasClass("otevreno")) {
+      $(this).parent().parent().removeClass("otevreno");
+      $(this).text("Zobrazit vše");
+    }
+
+    else {
+      $(this).parent().parent().addClass("otevreno");
+      $(this).text("Zavřít");
+    }
+  });
 
   // mobilnio Menu
 

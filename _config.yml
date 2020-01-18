@@ -17,3 +17,6 @@ url: "https://najdimazlicka.cz" # the base hostname & protocol for your site
 markdown: kramdown
 sass:
     style: compressed
+
+plugins:
+  - jekyll-autoprefixer

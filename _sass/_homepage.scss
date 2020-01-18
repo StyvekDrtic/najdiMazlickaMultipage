@@ -1,9 +1,10 @@
-.jumbotron {
+.jumbotronDesktop {
   background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
   border-radius: 10px;
   width: calc(100% - 20px);
   max-width: 1400px;
   margin: 0 auto;
+  display: none;
 
   .jumbotronInner {
     @media screen and (min-width: 900px) {
@@ -20,13 +21,13 @@
     @media screen and (min-width: 1100px) {
       max-width: 940px;
       width: calc(100% - 200px);
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
 
     @media screen and (min-width: 1100px) {
-      padding-top: 90px;
-      padding-bottom: 90px;
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
   }
 
@@ -72,7 +73,7 @@
     letter-spacing: 0;
     text-align: center;
     line-height: 30px;
-    width: calc(100% - 39px);
+    width: calc(100% - 30px);
     margin: 0 auto;
     margin-top: 25px;
     padding-bottom: 35px;
@@ -126,6 +127,78 @@
 
   @media screen and (min-width: 900px) {
     width: calc(100% - 40px);
+    display: block;
+  }
+}
+
+.jumbotronMobile {
+  display: block;
+  position: relative;
+
+  .content {
+    margin: 0 auto;
+    width: calc(100% - 20px);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 15%, #FFFFFF 36%, #F3F3F3 100%);
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+    padding-top: 180px;
+    padding-bottom: 30px;
+    max-width: 600px;
+
+    h1 {
+      font-family: AvenirBlack;
+      font-size: 32px;
+      color: #000000;
+      letter-spacing: 0;
+      text-align: center;
+      margin: 0 auto;
+      width: calc(100%);
+      max-width: 350px;
+
+      @media screen and (max-width: 350px) {
+        font-size: 31px;
+      }
+    }
+
+    p {
+      font-family: AvenirMedium;
+      font-size: 16px;
+      color: #727272;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 30px;
+      margin: 0 auto;
+      width: calc(100% - 30px);
+      margin-top: 20px;
+      margin-bottom: 30px;
+      max-width: 400px;
+    }
+
+    @media screen and (min-width: 400px) {
+      padding-top: 210px;
+    }
+  }
+
+  .pozadi {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 56px);
+    left: 28px;
+    height: 300px;
+    background: url("../img/ilustrace2-min.png");
+    z-index: 0;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 400px) {
+      height: 320px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    display: none;
   }
 }
 
@@ -149,7 +222,7 @@
 
 .zjistitViceJumbo {
   background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
-  box-shadow:inset 0px 0px 0px 2px #D7D7D7;
+  box-shadow:inset 0px 0px 0px 1.5px #D7D7D7;
   color: black;
   margin-top: 15px;
 
@@ -158,22 +231,166 @@
   }
 }
 
+.postup {
+  margin-top: 50px;
+
+  h2 {
+    font-family: AvenirMedium;
+    font-size: 27px;
+    color: #000000;
+    text-align: center;
+    line-height: 48px;
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 60px;
+      margin-bottom: 80px;
+
+      h3 {
+        font-family: AvenirHeavy;
+        font-size: 22px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 15px;
+
+        @media screen and (min-width: 900px) {
+          font-size: 19px;
+        }
+      }
+
+      p {
+        font-family: AvenirMedium;
+        font-size: 16px;
+        color: #939393;
+        text-align: center;
+        line-height: 26px;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        max-width: 270px;
+
+        @media screen and (min-width: 900px) {
+          width: 100%;
+          font-size: 15px;
+          line-height: 24px;
+        }
+      }
+
+      img {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 30px;
+      }
+
+      &:nth-child(1) {
+        img {
+          width: 246px;
+
+          @media screen and (min-width: 900px) {
+            width: 215px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          width: 212px;
+
+          @media screen and (min-width: 900px) {
+            width: 185px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        img {
+          width: 282px;
+
+          @media screen and (min-width: 900px) {
+            width: 202px;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        img {
+          width: 194px;
+
+          @media screen and (min-width: 900px) {
+            width: 158px;
+          }
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        display: inline-block;
+        margin: 0 60px;
+        margin-bottom: 80px;
+        vertical-align: bottom;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin: 0;
+        margin-bottom: 80px;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1400px;
+      width: calc(100% - 40px);
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+
+  .registrovatZtratu {
+    margin-top: -20px;
+  }
+}
+
 .features {
   text-align: center;
   display: block;
   margin: 0 auto;
-  width: calc(100% - 50px);
-  max-width: 400px;
-  margin-top: 25px;
+  width: calc(100% - 20px);
+  max-width: 500px;
+  margin-top: 90px;
+  background-image: linear-gradient(153deg, #F9F9F9 49%, #F3F3F3 100%);
+  border-radius: 10px;
 
   ul {
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
+    width: calc(100% - 30px);
+    margin: 0 auto;
 
     .dektopFeature {
       display: none;
+
+      img {
+        height: 27px;
+        padding-top: 17px;
+        padding-bottom: 15.87px;
+      }
 
       @media screen and (min-width: 900px) {
         display: block;
@@ -183,9 +400,28 @@
     li {
       width: 100px;
       list-style: none;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .featureFotoCesko {
+        height: 43.06px;
+        padding-top: 8.14px;
+        padding-bottom: 8.81px;
+      }
+
+      .featureFotoStopky {
+        height: 52.42px;
+        padding-top: 2.5px;
+        padding-bottom: 5.08px;
+      }
+
+      .featureFoto74 {
+        height: 28.89px;
+        padding-top: 16.27px;
+        padding-bottom: 14.84px;
+      }
 
       img {
-        height: 60px;
         display: block;
         margin: 0 auto;
 
@@ -237,7 +473,8 @@
   }
 
   @media screen and (min-width: 900px) {
-    max-width: 1000px;
+    max-width: 940px;
+    margin-top: 150px;
   }
 }
 
@@ -381,10 +618,10 @@
 }
 
 .procReklamy {
-  margin-top: 90px;
+  margin-top: 100px;
 
   @media screen and (min-width: 900px) {
-    margin-top: 120px;
+    margin-top: 150px;
   }
 }
 
@@ -399,21 +636,16 @@
 
   p {
     font-family: AvenirMedium;
-    font-size: 18px;
+    font-size: 16px;
     color: #000000;
     text-align: center;
-    line-height: 40px;
-    width: calc(100% - 30px);
+    line-height: 38px;
+    width: calc(100% - 40px);
     margin: 0 auto;
     padding-top: 25px;
 
     span {
       font-family: AvenirBlack;
-    }
-
-    @media screen and (max-width: 360px) {
-      font-size: 17px;
-      line-height: 36px;
     }
 
     @media screen and (min-width: 900px) {
@@ -442,7 +674,7 @@
 
     .jmeno {
       font-family: AvenirHeavy;
-      font-size: 20px;
+      font-size: 18px;
       color: #333333;
       letter-spacing: 0;
       display: block;
@@ -474,13 +706,18 @@
   }
 
   @media screen and (min-width: 900px) {
-    margin-top: 120px;
+    margin-top: 150px;
     max-width: 940px;
   }
 }
 
+.pribehyNasichZakazniku {
+  width: 240px;
+  margin-top: 60px;
+}
+
 .jakHledame {
-  margin-top: 90px;
+  margin-top: calc(100px + 30px);
 
   .text {
     @media screen and (min-width: 900px) {
@@ -495,13 +732,13 @@
   }
 
   @media screen and (min-width: 900px) {
-    margin-top: 120px;
+    margin-top: 150px;
   }
 }
 
 .reference {
   position: relative;
-  margin-top: 90px;
+  margin-top: 100px;
 
   h2 {
     font-family: AvenirMedium;
@@ -604,11 +841,11 @@
 
         p {
           font-family: AvenirMedium;
-          font-size: 16px;
+          font-size: 15px;
           color: #000000;
           text-align: center;
-          line-height: 31.88px;
-          width: calc(100% - 40px);
+          line-height: 28px;
+          width: calc(100% - 30px);
           margin: 0 auto;
           margin-top: 15px;
           margin-bottom: 15px;
@@ -667,7 +904,7 @@
   }
 
   @media screen and (min-width: 900px) {
-    margin-top: 120px;
+    margin-top: 150px;
   }
 }
 
@@ -696,17 +933,35 @@
 }
 
 .jakToVypada {
-  margin-top: calc(90px + 30px);
+  margin-top: calc(100px);
+
+  .registrovatZtratu {
+    margin-top: 60px;
+    width: 240px;
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  .desktopZjistitVice {
+    @media screen and (min-width: 900px) {
+      display: block;
+      text-align: center;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
 
   @media screen and (min-width: 900px) {
-    margin-top: calc(120px + 30px);
+    margin-top: calc(150px);
   }
 }
 
 .onas {
   width: calc(100% - 50px);
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 100px;
   max-width: 350px;
 
   h2 {
@@ -736,7 +991,7 @@
   }
 
   @media screen and (min-width: 900px) {
-    margin-top: 120px;
+    margin-top: 180px;
     max-width: 500px;
   }
 }
@@ -839,7 +1094,7 @@
     font-size: 16px;
     color: #7A7A7A;
     text-align: center;
-    line-height: 35px;
+    line-height: 30px;
     margin: 0 auto;
     margin-bottom: 40px;
     margin-top: 20px;
@@ -847,7 +1102,7 @@
     @media screen and (min-width: 900px) {
       max-width: 600px;
       font-size: 17px;
-      line-height: 36px;
+      line-height: 33px;
     }
   }
 
@@ -863,7 +1118,7 @@
   }
 
   @media screen and (min-width: 900px) {
-    margin-top: 120px;
+    margin-top: 150px;
     max-width: 940px;
   }
 }
@@ -904,7 +1159,7 @@
   margin-top: 90px;
 
   @media screen and (min-width: 900px) {
-    margin-top: 120px;
+    margin-top: 150px;
   }
 }
 
@@ -975,7 +1230,7 @@
   }
 
   @media screen and (min-width: 900px) {
-    margin-top: 120px;
+    margin-top: 150px;
   }
 }
 
@@ -1036,7 +1291,7 @@
   }
 
   @media screen and (min-width: 900px) {
-    margin-top: 120px;
+    margin-top: 150px;
   }
 
   @media screen and (min-width: 1100px) {
