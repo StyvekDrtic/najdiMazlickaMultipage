@@ -155,7 +155,7 @@
 
   .otevreno {
     p {
-      clip-path: inset(0px 0px 0px 0px) !important;
+      -webkit-clip-path: inset(0px 0px 0px 0px) !important;
       height: auto !important;
     }
 
