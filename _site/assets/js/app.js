@@ -1,3 +1,21 @@
+// header
+
+
+$(document).ready(function() {
+  if ($("header").hasClass("homepageHeader")) {
+    $(window).on("scroll", function() {
+      if ($(window).width() < 900) {
+        var fromTop = $(window).scrollTop();
+        $("header").toggleClass("homepageHeader", (fromTop < 580));
+        $("header").toggleClass("slideInDown", (fromTop > 580));
+      }
+    });
+  }
+});
+
+
+
+
 // pomocnik
 
 var zvire = null;
@@ -177,12 +195,25 @@ $('.carouselSlider').slick({
   arrows: false,
 });
 
+$('.carouselSliderCitaty').slick({
+  infinite: true,
+  variableWidth: true,
+  centerPadding: '70px',
+  dots: true,
+  autoplay: false,
+  autoplaySpeed: 3000,
+  centerMode: true,
+  arrows: false,
+});
+
 $('.fadeLeva a').click(function() {
 $('.carouselSlider').slick("slickPrev");
+$('.carouselSliderCitaty').slick("slickPrev");
 });
 
 $('.fadePrava a').click(function() {
 $('.carouselSlider').slick("slickNext");
+$('.carouselSliderCitaty').slick("slickNext");
 });
 
 

@@ -134,6 +134,7 @@
 .jumbotronMobile {
   display: block;
   position: relative;
+  margin-top: 10px;
 
   .content {
     margin: 0 auto;
@@ -252,7 +253,7 @@
       margin: 0;
       padding: 0;
       margin-top: 60px;
-      margin-bottom: 80px;
+      margin-bottom: 100px;
 
       h3 {
         font-family: AvenirHeavy;
@@ -274,7 +275,7 @@
         line-height: 26px;
         width: calc(100% - 40px);
         margin: 0 auto;
-        max-width: 270px;
+        max-width: 280px;
 
         @media screen and (min-width: 900px) {
           width: 100%;
@@ -344,7 +345,7 @@
 
     @media screen and (min-width: 900px) {
       text-align: center;
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto;
       margin-top: 60px;
     }
@@ -361,7 +362,87 @@
   }
 
   .registrovatZtratu {
-    margin-top: -20px;
+    margin-top: -40px;
+
+    @media screen and (min-width: 900px) {
+      margin-top: -20px;
+    }
+  }
+}
+
+.cisla {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 90px;
+  background-image: linear-gradient(180deg, #3E3E3E 0%, #222222 100%);
+  padding-bottom: 50px;
+
+  ul {
+    padding: 10px 0;
+    margin: 0;
+    max-width: 1400px;
+
+    li {
+      list-style: none;
+      margin: 40px auto;
+      background: rgba(255,255,255,0.09);
+      border-radius: 12px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: calc(100% - 30px);
+      max-width: 320px;
+
+      .lil {
+        font-family: AvenirMedium;
+        font-size: 17px;
+        color: rgba(255,255,255,0.50);
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 350px) {
+          font-size: 16px;
+        }
+      }
+
+      .big {
+        font-family: AvenirBlack;
+        font-size: 45px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 48px;
+        display: block;
+      }
+
+      @media screen and (min-width: 960px) {
+        width: calc(100%/3 - 20px);
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 500px;
+      }
+    }
+
+    @media screen and (min-width: 960px) {
+      display: flex;
+      width: calc(100% - 20px);
+      margin: 0 auto;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+
+  .registrovatZtratu {
+    background: #fff;
+
+    span {
+      background: linear-gradient(135deg, #FF8D55 0%, #E9214B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: AvenirHeavy;
+      font-size: 17px;
+      letter-spacing: 0;
+      text-align: center;
+    }
   }
 }
 
@@ -738,7 +819,7 @@
 
 .reference {
   position: relative;
-  margin-top: 100px;
+  margin-top: 90px;
 
   h2 {
     font-family: AvenirMedium;
@@ -747,7 +828,7 @@
     text-align: center;
     line-height: 48px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: calc(100% - 50px);
 
     @media screen and (max-width: 350px) {
@@ -906,6 +987,132 @@
   @media screen and (min-width: 900px) {
     margin-top: 150px;
   }
+
+  .carouselSliderCitaty {
+    margin-bottom: 60px;
+
+    .slick-dots {
+      bottom: -35px;
+    }
+
+    .carouselBlok {
+      .carouselBlokInner {
+        background-image: linear-gradient(153deg, #F9F9F9 49%, #F3F3F3 100%);
+        border-radius: 10px;
+        width: calc(100vw - 80px);
+        max-width: 300px;
+        position: relative;
+        margin-left: 7px;
+        margin-right: 7px;
+
+
+        .fotkaCarousel {
+          height: 180px;
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          background-position: center;
+          background-repeat: repeat;
+          background-size: cover;
+          position: relative;
+
+          .popisek {
+            font-family: AvenirMedium;
+            font-size: 17px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            text-align: center;
+            width: 100%;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            height: 33px;
+            padding-top: 30px;
+            background-image: linear-gradient(180deg, transparent 0%, #0000009e 100%);
+
+            span {
+              font-family: AvenirBlack;
+              font-size: 17px;
+              color: #FFFFFF;
+              letter-spacing: 0;
+              text-align: center;
+            }
+          }
+
+          @media screen and (min-width: 900px) {
+            border-radius: 13px;
+            box-shadow: 0 4px 9px 0 rgba(0,0,0,0.10);
+            border-radius: 13.12px;
+          }
+        }
+
+        p {
+          font-family: AvenirMedium;
+          font-size: 17px;
+          color: #000000;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 30px;
+          width: calc(100% - 20px);
+          margin: 25px auto;
+
+          span {
+            font-family: AvenirBlack;
+          }
+        }
+
+        .clovek {
+          width: 210px;
+          margin: 0 auto;
+          text-align: center;
+          border-top: 1px solid #CECECE;
+          padding-bottom: 25px;
+
+          .big {
+            font-family: AvenirHeavy;
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0;
+            text-align: center;
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 25px;
+          }
+
+          .lil {
+            font-family: AvenirMedium;
+            font-size: 14px;
+            color: #969696;
+            letter-spacing: 0;
+            text-align: center;
+            display: block;
+          }
+        }
+
+        @media screen and (max-width: 340px) {
+          width: calc(100vw - 60px);
+        }
+
+        @media screen and (min-width: 900px) {
+          margin: 0 25px;
+          max-width: 320px;
+          margin-bottom: 10px;
+        }
+
+        @media screen and (min-width: 1000px) {
+          margin: 0 35px;
+        }
+      }
+    }
+  }
+
+  .registrovatZtratu {
+    width: 240px;
+
+    @media screen and (min-width: 900px) {
+      margin-top: 80px;
+    }
+  }
 }
 
 .fotka1 {
@@ -930,6 +1137,26 @@
 
 .fotka6 {
   background-image: url("../img/foto6-min.jpg");
+}
+
+.fotka1c {
+  background-image: url("../img/foto1c-min.jpg");
+}
+
+.fotka2c {
+  background-image: url("../img/foto2c-min.jpg");
+}
+
+.fotka3c {
+  background-image: url("../img/foto3c-min.jpg");
+}
+
+.fotka4c {
+  background-image: url("../img/foto4c-min.jpg");
+}
+
+.fotka5c {
+  background-image: url("../img/foto5c-min.jpg");
 }
 
 .jakToVypada {
@@ -966,11 +1193,11 @@
 
   h2 {
     font-family: AvenirMedium;
-    font-size: 18px;
+    font-size: 22px;
     color: #000000;
     text-align: center;
-    line-height: 37px;
-    margin-bottom: 40px;
+    line-height: 40px;
+    margin-bottom: 50px;
 
     span {
       font-family: AvenirBlack;
@@ -1001,7 +1228,7 @@
   justify-content: space-between;
   max-width: 315px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
   .profil {
     img {

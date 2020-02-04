@@ -233,6 +233,10 @@ header {
       }
     }
 
+    .hotlinka {
+      display: none;
+    }
+
     @media screen and (min-width: 1100px) {
       height: 90px;
     }
@@ -241,6 +245,39 @@ header {
 
 .homepageHeader {
   position: absolute;
+
+  .mobilniMenu {
+    display: none !important;
+
+    @media screen and (min-width: 900px) {
+      display: block !important;
+    }
+  }
+
+  .hotlinka {
+    display: block !important;
+    background-image: linear-gradient(135deg, #FFEEE6 0%, #FCDFE5 100%);
+    border-radius: 5px;
+    font-family: AvenirHeavy;
+    font-size: 16px;
+    color: #FF3939;
+    letter-spacing: 0;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: 19px;
+    right: 15px;
+    padding: 5px 15px;
+
+    span {
+      font-size: AvenirMedium;
+      color: #FE8D8F;
+    }
+
+    @media screen and (min-width: 900px) {
+      display: none !important;
+    }
+  }
 
   @media screen and (min-width: 900px) {
     position: fixed;
