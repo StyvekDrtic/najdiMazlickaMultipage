@@ -258,17 +258,15 @@ $('a[href*="#"]')
 
   // faq
 
-  setTimeout(function() {
-    $(".otazka h3").click(function() {
-      if ($(this).parent().hasClass("zavreno")) {
-        $(this).parent().removeClass("zavreno");
-      }
+  $("body").on('click', '.otazka h3', function() {
+    if ($(this).parent().hasClass("zavreno")) {
+      $(this).parent().removeClass("zavreno");
+    }
 
-      else {
-        $(this).parent().addClass("zavreno");
-      }
-    });
-  }, 1000);  // kvuli ab testovani
+    else {
+      $(this).parent().addClass("zavreno");
+    }
+  });
 
 
   // paragraf
