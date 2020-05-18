@@ -270,7 +270,6 @@ $('a[href*="#"]')
   });
 
 
-
   // paragraf
 
   $(".zobrazitVse span").click(function() {
