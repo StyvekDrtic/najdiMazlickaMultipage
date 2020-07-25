@@ -7,7 +7,8 @@
 
 # Site settings
 title: Najdi Mazlíčka | Hledání ztracených zvířat pomocí reklam na sociálních sítích
-description: Pomáháme lidem hledat ztracená zvířata s pomocí reklam na sociálních sítích. Do pár hodin tak o ztrátě informujeme tisíce lidí v oblasti, kde se zvíře pohybuje.
+descriptionOriginalni: Pomáháme lidem hledat ztracená zvířata s pomocí reklam na sociálních sítích. Do pár hodin tak o ztrátě informujeme tisíce lidí v oblasti, kde se zvíře pohybuje.
+description: Utekl Vám pes? Ztratila se Vám kočka? Do pár hodin o ztrátě informujeme tisíce lidí v oblasti, kde se zvíře pohybuje s pomocí reklam na sociálních sítích.
 keywords: NajdiMazlíčka, Najdi Mazlíčka, registrace ztráty, psí detektiv, ztraceni psi, ztratil se pes, ztráta kočky, hledání ztracených psů, hledáme kočku, pátrání po ztracených psech, ztracený pes, zatoulaná kočka, ztratila se kočka, hledáme psa, hledá se pes, ztráta psa, ztratila se mi kočka, hledání ztracených koček, zaběhnutý pes, zatoulaný pes, ztracené kočky, ztratil se mi pes, hledá se kočka, zaběhnutá kočka, ztracení psi
 author: palmmedia.co
 baseurl: "" # the subpath of your site, e.g. /blog
