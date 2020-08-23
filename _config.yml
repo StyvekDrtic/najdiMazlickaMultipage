@@ -13,6 +13,7 @@ keywords: NajdiMazlíčka, Najdi Mazlíčka, registrace ztráty, psí detektiv, 
 author: palmmedia.co
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://najdimazlicka.cz" # the base hostname & protocol for your site
+force_polling: true
 
 # Build settings
 markdown: kramdown
